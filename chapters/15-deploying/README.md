@@ -224,7 +224,7 @@ Think of them as secret notes your app can read but nobody can see in your code.
 2. Click **"Settings"** → **"Environment Variables"**
 3. Add each variable:
    - **Name**: `STRIPE_SECRET_KEY`
-   - **Value**: `sk_live_abc123...`
+   - **Value**: `your_stripe_key_here`
    - **Environment**: Choose which environments need it (Production, Preview, Development)
 4. Click **"Save"**
 5. **Redeploy** your app for the changes to take effect

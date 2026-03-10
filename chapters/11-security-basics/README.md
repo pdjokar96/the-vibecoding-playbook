@@ -51,13 +51,13 @@ Here's the tricky part — API keys don't always look the same. Here are example
 sk_live_EXAMPLE_KEY_DO_NOT_USE_replace_with_yours...
 
 # OpenAI
-sk-proj-abc123def456ghi789jkl012mno345pqr678stu901...
+sk-proj-EXAMPLE-DO-NOT-USE-replace-with-yours...
 
 # Supabase
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh...
+eyJ-EXAMPLE-DO-NOT-USE-replace-with-yours...
 
 # AWS
-AKIAIOSFODNN7EXAMPLE
+AKIA-EXAMPLE-DO-NOT-USE
 
 # SendGrid
 SG.xxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyy
@@ -138,13 +138,13 @@ Open `.env` and add your keys, one per line. The format is `NAME=value` with no 
 STRIPE_SECRET_KEY=sk_live_EXAMPLE_KEY_DO_NOT_USE...
 
 # AI features
-OPENAI_API_KEY=sk-proj-abc123def456ghi789jkl012mno345...
+OPENAI_API_KEY=sk-proj-EXAMPLE-replace-with-yours...
 
 # Database
-DATABASE_URL=postgresql://user:password@host:5432/mydb
+DATABASE_URL=postgresql://your_user:your_password@your_host:5432/your_db
 
 # Email service
-SENDGRID_API_KEY=SG.xxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyy
+SENDGRID_API_KEY=SG.EXAMPLE-replace-with-yours
 ```
 
 > ⚠️ **Important:** No quotes around the values (unless the value itself contains spaces). No spaces around the `=` sign.
@@ -223,10 +223,10 @@ Create a file called `.env.example` that shows what variables are needed — but
 
 ```env
 # Copy this file to .env and fill in your real values
-STRIPE_SECRET_KEY=sk_live_your_key_here
-OPENAI_API_KEY=sk-proj-your_key_here
-DATABASE_URL=postgresql://user:password@localhost:5432/mydb
-SENDGRID_API_KEY=SG.your_key_here
+STRIPE_SECRET_KEY=your_stripe_key_here
+OPENAI_API_KEY=your_openai_key_here
+DATABASE_URL=postgresql://your_user:your_password@your_host:5432/your_db
+SENDGRID_API_KEY=your_sendgrid_key_here
 ```
 
 This file **is** committed to Git. It helps you (and anyone else) know what environment variables the app needs, without exposing real values.
